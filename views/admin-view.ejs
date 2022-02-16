@@ -20,10 +20,10 @@
 
     <div class="charity-section">
      <div class="admin-heading">
-      <h1><a href="">Approval Requests</a></h1> 
-      <h1 class="approved"><a href="/approved">Already Approved</a></h1>
+      <h1 class="approved"><a href="/approved" style="color: rgb(52, 52, 252);">Already Approved</a></h1>
      </div>
     <div class="details">
+      <h2 style="color: #fc1111;" >Approval Requests</h1> 
         <% if(posts.length > 0 ){ %> 
             <% posts.map((post)=>{  %> 
                 <div class="donation-card">
@@ -53,6 +53,8 @@
   
   <style>
     h1{
+      color: tomato;
+      text-decoration: underline;
         text-align: center;
     }
     .details{

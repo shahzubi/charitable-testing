@@ -177,19 +177,19 @@ console.log('444');//four
 // })
 
 // //DISPLAY APPROVED POSTS - posts that are approved will be displayed
-// router.get('/approved', (req, res) => {
-//     const approved = [];
-//     Post.find()
-//     .then((result) => {
-//       result.map(ele => {if(ele.approved == true){
-//         approved.push(ele);
-//       } else{
-//        console.log("no approved posts");
-//       }})
-//       res.render("approved-posts", {posts:approved}) 
-//     } )
-//     .catch((err)=> console.log(err,"found error"))
-//   })
+ router.get('/approved', (req, res) => {
+     const approved = [];
+     Post.find()
+     .then((result) => {
+       result.map(ele => {if(ele.approved == true){
+         approved.push(ele);
+       } else{
+        console.log("no approved posts");
+       }})
+       res.render("approved-posts", {posts:approved}) 
+     } )
+     .catch((err)=> console.log(err,"found error"))
+   })
 
   
 
