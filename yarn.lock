@@ -1260,10 +1260,10 @@
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   "version" "1.0.4"
 
-"mongodb@3.7.2":
-  "integrity" "sha512-/Qi0LmOjzIoV66Y2JQkqmIIfFOy7ZKsXnQNlUXPFXChOw3FCdNqVD5zvci9ybm6pkMe/Nw+Rz9I0Zsk2a+05iQ=="
-  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-3.7.2.tgz"
-  "version" "3.7.2"
+"mongodb@3.7.3":
+  "integrity" "sha512-Psm+g3/wHXhjBEktkxXsFMZvd3nemI0r3IPsE0bU+4//PnvNWKkzhZcEsbPcYiWqe8XqXJJEg4Tgtr7Raw67Yw=="
+  "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-3.7.3.tgz"
+  "version" "3.7.3"
   dependencies:
     "bl" "^2.2.1"
     "bson" "^1.1.4"
@@ -1278,16 +1278,16 @@
   "resolved" "https://registry.npmjs.org/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz"
   "version" "1.0.2"
 
-"mongoose@*", "mongoose@^5.12.2":
-  "integrity" "sha512-hVHm864eBpaCr0W6CF7qTmC62dmepnT+A6ZnqKPU9asw7jjYHBcBxPgCnrGBMUACbZtzidO6HmB4J3F1YU2rdg=="
-  "resolved" "https://registry.npmjs.org/mongoose/-/mongoose-5.13.11.tgz"
-  "version" "5.13.11"
+"mongoose@*", "mongoose@^5.13.14":
+  "integrity" "sha512-j+BlQjjxgZg0iWn42kLeZTB91OejcxWpY2Z50bsZTiKJ7HHcEtcY21Godw496GMkBqJMTzmW7G/kZ04mW+Cb7Q=="
+  "resolved" "https://registry.npmjs.org/mongoose/-/mongoose-5.13.14.tgz"
+  "version" "5.13.14"
   dependencies:
     "@types/bson" "1.x || 4.0.x"
     "@types/mongodb" "^3.5.27"
     "bson" "^1.1.4"
     "kareem" "2.3.2"
-    "mongodb" "3.7.2"
+    "mongodb" "3.7.3"
     "mongoose-legacy-pluralize" "1.0.2"
     "mpath" "0.8.4"
     "mquery" "3.2.5"

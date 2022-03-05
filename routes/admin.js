@@ -197,12 +197,21 @@ console.log('444');//four
 
 //DELETE POST -- post will be deleted/rejected
 
-router.delete("/:id", (req, res) => {
+router.get("/delete/(:id)", (req, res) => {
 
     const id = req.params.id
-    Post.findByIdAndDelete(id)
+    Post.findByIdAndRemove(id)
       .then((result) => {
-          res.json({redirect: '/admin-view'})
+        const approved = [];
+        Post.find()
+        .then((result) => {
+          result.map(ele => {if(ele.approved == true){
+            approved.push(ele);
+          } else{
+           console.log("no approved posts");
+          }})
+          res.render("approved-posts", {posts:approved}) 
+        } )
       })
       .catch(err => console.log(err))
   });

@@ -20,6 +20,10 @@ router.get("/registerUser" , (req,res) => {
   router.get("/login" , (req,res) => {
     res.render("login")
   });
+
+  router.get("/aproved-posts", (req,res) => {
+    res.render("approved-posts")
+  });
   
   router.get("/admin-login" , (req,res) => {
     res.render("admin-login")

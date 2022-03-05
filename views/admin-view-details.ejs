@@ -16,14 +16,16 @@
       
             <div class="donation-card">
                <img src="/media/<%= post.image %> "> 
-                <p><%= post.title %> </p>
-                <p><%= post.desc %> </p>
+                <p> <%= post.title %> </p>
+                <p> <%= post.desc %> </p>
                 <p>Funds target : <%= post.amount %> </p>
                 <form action="/admin-login/approve/<%= post._id %>" method="POST">
                     <input type="hidden" name= "_method" value = "PUT">
                     <button class="registerBtn">Approve</button>
                 </form>
-                <a class="delete" data-doc="<%= post._id %>"><button class="registerBtn del"> Delete </button></a>
+
+                <a class="delete" href="/delete/<%= post._id %>">
+                  <button class="registerBtn del"> Delete </button></a>
             </div>  
     </div>
 
